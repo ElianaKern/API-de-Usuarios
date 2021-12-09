@@ -15,8 +15,12 @@ const inputEditarDireccion = document.querySelector('#input-editar-direccion');
 const inputEditarTelefono = document.querySelector('#input-editar-tel');
 const botonEnviarEdicion = document.querySelector('#enviar-edicion');
 
+//Tabla con datos de Usuario
+const tabla = document.querySelector('#tabla');
+
 botonAgregarUsuario.onclick = () => {
   formulario.classList.toggle('ocultar');
+  tabla.classList.add("ocultar")  
 };
 
 const pedirInfoActualizada = () => {
@@ -32,7 +36,6 @@ const pedirInfoActualizada = () => {
 pedirInfoActualizada();
 
 const crearTablaHTML = (data) => {
-  const tabla = document.querySelector('#tabla');
   const html = data.reduce(
     (acc, curr) => {
       return (
@@ -89,6 +92,7 @@ botonEnviarUsuario.onclick = (e) => {
   e.preventDefault();
   agregarUsuarioNuevo();
   formulario.classList.add('ocultar');
+  tabla.classList.remove("ocultar")
 };
 
 const traerInfoDeUsuario = (id) => {
@@ -136,14 +140,6 @@ const editarUsuario = () => {
   }
 };
 // BOTON ELIMINAR
-// Llamar a los botones desde JS con querySelectorAll
-// Hacer un for que recorra el array de botones
-// Adentro del for, hacer botones[i].onclick
-// Guardar en una variable el ID del boton = botones[i].id
-// Hacer un DELETE para borrar la info
-// En la url del DELETE interpolar la variable ID
-// Ejecutamos la funcion pedirInfoActualizada() (que es igual a hacer un GET)
-
 const eliminarUsuario = () => {
   let botonesEliminar = document.querySelectorAll('.boton-eliminar');
   console.log(botonesEliminar);

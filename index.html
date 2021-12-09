@@ -9,8 +9,11 @@
   <script src="https://kit.fontawesome.com/0ca0e55b9a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<button id="boton-agregar-usuario">Agregar usuario</button>
-  <form action="" id="formulario" class="ocultar">
+    <nav>
+        <button id="boton-agregar-usuario">Agregar usuario</button>
+    </nav>
+<main>
+  <form id="formulario" class="ocultar">
     <label for="nombre">Nombre
       <input type="text" name="nombre" id="input-nombre">
     </label>
@@ -23,7 +26,9 @@
     <label for="tel">Telefono
       <input type="phone" name="tel" id="input-tel">
     </label>
+    <div class="contenedor-boton">
     <input type="submit" value="Enviar" id="input-enviar">
+    </div>
   </form>
 
   
@@ -41,7 +46,9 @@
     <label for="input-editar-tel">Telefono
       <input type="phone" name="tel" id="input-editar-tel">
     </label>
+    <div class="contenedor-boton">
     <input type="submit" value="Editar" id="enviar-edicion">
+    </div>
   </form>
 
   
@@ -54,5 +61,6 @@
   </table>
 
   <script src="index.js"></script>
+</main>
 </body>
 </html>
