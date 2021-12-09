@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>84</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0ca0e55b9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<button id="boton-agregar-usuario">Agregar usuario</button>
+  <form action="" id="formulario" class="ocultar">
+    <label for="nombre">Nombre
+      <input type="text" name="nombre" id="input-nombre">
+    </label>
+    <label for="email">Email
+      <input type="email" name="email" id="input-email">
+    </label>
+    <label for="direccion">Direccion
+      <input type="text" name="direccion" id="input-direccion">
+    </label>
+    <label for="tel">Telefono
+      <input type="phone" name="tel" id="input-tel">
+    </label>
+    <input type="submit" value="Enviar" id="input-enviar">
+  </form>
+
+  
+
+  <form action="" id="formulario-editar" class="ocultar">
+    <label for="input-editar-nombre">Nombre
+      <input type="text" name="nombre" id="input-editar-nombre">
+    </label>
+    <label for="input-editar-email">Email
+      <input type="email" name="email" id="input-editar-email">
+    </label>
+    <label for="input-editar-direccion">Direccion
+      <input type="text" name="direccion" id="input-editar-direccion">
+    </label>
+    <label for="input-editar-tel">Telefono
+      <input type="phone" name="tel" id="input-editar-tel">
+    </label>
+    <input type="submit" value="Editar" id="enviar-edicion">
+  </form>
+
+  
+  <!-- tr: table row: fila de tabla
+  th: table header: encabezado de tabla
+  td: tabla data: datos de la tabla -->
+  <table class="tabla-usuarios" id="tabla">
+    
+   
+  </table>
+
+  <script src="index.js"></script>
+</body>
+</html>
